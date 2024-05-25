@@ -1,0 +1,12 @@
+.footer-comp{
+    justify-content: space-between;
+    background-color: #262626;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.right-side-of-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}

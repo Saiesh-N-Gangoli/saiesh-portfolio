@@ -7,10 +7,12 @@ import Project from './Projects/Project';
 import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import NotFound from './NotFound/NotFound';
+import NavigationBar from './NavigationBar/NavigationBar';
 
 function App() {
   return (
     <React.Fragment>
+      <NavigationBar/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<About/>}/>
