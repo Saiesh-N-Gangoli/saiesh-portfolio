@@ -1,10 +1,11 @@
 import React from 'react'
+import NavigationBar from '../NavigationBar/NavigationBar'
 
 const HomePage = () => {
   return (
-    <div>
-      
-    </div>
+    <React.Fragment>
+      <NavigationBar/>
+    </React.Fragment>
   )
 }
 
