@@ -1,0 +1,12 @@
+.navigation-bar{
+    background-color: #1F2833 !important;
+    color: #66FCF1 !important;
+}
+
+.color-navigation-font{
+    color: #66FCF1 !important;
+}
+
+.color-navigation-font.active{
+    font-weight: bold;
+}

@@ -31,13 +31,13 @@
   }
   
   textarea {
-    resize: vertical;
+    resize: none !important;
   }
   
   .submit-button {
-    background-color: rgb(33,37,41);
-    color: #ffffff;
-    border: none;
+    background-color: #1F2833;
+    color: #C5C6C7;
+    border: 1px solid #66FCF1;
     width: 100px;
     height: 40px;
     font-size: 18px;
@@ -48,8 +48,8 @@
   }
   
   .submit-button:hover {
-    background-color: #262626;
-    color: white;
+    background-color: rgb(22, 22, 22) ;
+    color: #C5C6C7;
   }
   
   .main-contact-container{
@@ -60,4 +60,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .form-field label{
+    color: #C5C6C7;
+  }
+
+  .left-contact-container p, .left-contact-container h2{
+    color: #C5C6C7;
   }
