@@ -66,6 +66,10 @@
     color: #C5C6C7;
   }
 
-  .left-contact-container p, .left-contact-container h2{
+  .left-contact-container p{
     color: #C5C6C7;
+  }
+
+  .left-contact-container h2{
+    color: #66FCF1;
   }
