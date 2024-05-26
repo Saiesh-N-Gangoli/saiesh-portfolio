@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className='d-flex footer-comp'>
+    <footer className='d-flex footer-comp play-regular'>
       <div className="left-side-of-footer">
         &copy; 2024 Saiesh N Gangoli
       </div>
