@@ -9,18 +9,18 @@ const NavigationBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   return (
-    <Navbar bg="dark" variant="dark" className="navigation-bar w-100">
+    <Navbar className="navigation-bar w-100">
     <Container className="justify-content-between">
-      <Nav className="mx-auto">
-        <Nav.Link onClick={() => navigate('/')}
+      <Nav className="mx-auto" >
+        <Nav.Link className='color-navigation-font' onClick={() => navigate('/')}
         active={location.pathname === '/'}>Home</Nav.Link>
-        <Nav.Link onClick={() => navigate('/about')}
+        <Nav.Link className='color-navigation-font' onClick={() => navigate('/about')}
         active={location.pathname === '/about'}>About</Nav.Link>
-        <Nav.Link onClick={() => navigate('/skills')}
+        <Nav.Link className='color-navigation-font' onClick={() => navigate('/skills')}
         active={location.pathname === '/skills'}>Skills</Nav.Link>
-        <Nav.Link onClick={() => navigate('/projects')}
+        <Nav.Link className='color-navigation-font' onClick={() => navigate('/projects')}
         active={location.pathname === '/projects'}>Projects</Nav.Link>
-        <Nav.Link onClick={() => navigate('/contact')} 
+        <Nav.Link className='color-navigation-font' onClick={() => navigate('/contact')} 
         active={location.pathname === '/contact'}>Contact</Nav.Link>
       </Nav>
     </Container>

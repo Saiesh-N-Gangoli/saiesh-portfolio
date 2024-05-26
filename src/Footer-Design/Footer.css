@@ -1,8 +1,9 @@
 .footer-comp{
     justify-content: space-between;
-    background-color: #262626;
-    color: #fff;
-    padding: 10px 10px;
+    background-color: #1F2833;
+    color: #66FCF1 !important;
+    padding: 8px 10px;
+    height: 55px;
 }
 
 .right-side-of-footer{
