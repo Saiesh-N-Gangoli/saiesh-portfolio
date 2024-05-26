@@ -3,6 +3,7 @@ import './Contact.css'
 import emailjs from '@emailjs/browser';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import {PUBLIC_KEY,TEMPLATE_KEY, SERVICE_KEY} from './Constants.js'
 
 const ContactForm = () => {
     const form = useRef();
@@ -11,19 +12,18 @@ const ContactForm = () => {
       e.preventDefault();
   
       emailjs
-        .sendForm('service_ch54ycl', 'template_gcflpos', form.current, {
-          publicKey: 'Naqr6vIdc1BSWKFxi',
+        .sendForm(SERVICE_KEY, TEMPLATE_KEY, form.current, {
+          publicKey: PUBLIC_KEY,
         })
         .then(
           () => {
-            console.log('SUCCESS!');
             toast.success("Message sent",{
                 position: "top-center",
                 closeButton: false
               });
           },
           (error) => {
-            console.log('FAILED...', error.text);
+            toast.error('FAILED...', error.text);
           },
         );
     };
