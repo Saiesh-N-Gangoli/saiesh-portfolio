@@ -9,7 +9,7 @@ const NavigationBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   return (
-    <Navbar className="navigation-bar w-100">
+    <Navbar className="navigation-bar w-100 play-regular">
     <Container className="justify-content-between">
       <Nav className="mx-auto" >
         <Nav.Link className='color-navigation-font' onClick={() => navigate('/')}
