@@ -1,44 +1,28 @@
 import React, { useRef } from 'react'
 import './Contact.css'
-import emailjs from '@emailjs/browser';
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
-import {PUBLIC_KEY,TEMPLATE_KEY, SERVICE_KEY} from './Constants.js'
+import { ToastContainer} from 'react-toastify';
+import { sendEmail } from './EmailService';
+
 
 const ContactForm = () => {
     const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm(SERVICE_KEY, TEMPLATE_KEY, form.current, {
-          publicKey: PUBLIC_KEY,
-        })
-        .then(
-          () => {
-            toast.success("Message sent",{
-                position: "top-center",
-                closeButton: false
-              });
-          },
-          (error) => {
-            toast.error('FAILED...', error.text);
-          },
-        );
-    };
-  return (
+
+const handleSubmit = (e) =>{
+    e.preventDefault();
+    sendEmail(form.current);
+}
+
+   
+return (
     <React.Fragment>
         <ToastContainer />
-       <form className="contact-form" ref={form} onSubmit={sendEmail}>
+       <form className="contact-form" ref={form} onSubmit={handleSubmit}>
        <div className="form-group">
         <div className="form-field">
           <label htmlFor="firstName">First Name *</label>
           <input type="text" id="firstName" name="user_name" required/>
-        </div>
-        <div className="form-field">
-          <label htmlFor="lastName">Last Name *</label>
-          <input type="text" id="lastName" name="lastName" required/>
         </div>
       </div>
       <div className="form-group">
