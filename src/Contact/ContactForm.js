@@ -21,7 +21,7 @@ return (
        <form className="contact-form" ref={form} onSubmit={handleSubmit}>
        <div className="form-group">
         <div className="form-field">
-          <label htmlFor="firstName">First Name *</label>
+          <label htmlFor="firstName">Name *</label>
           <input type="text" id="firstName" name="user_name" required/>
         </div>
       </div>
