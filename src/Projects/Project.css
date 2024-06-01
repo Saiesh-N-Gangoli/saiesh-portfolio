@@ -1,0 +1,39 @@
+.project-container{
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card{
+    margin-right: 17px;
+    margin-left: 17px;
+    background-color: #1F2833 !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    border: 1px solid #66FCF1 !important;
+}
+
+.project-button{
+    background-color: #1F2833 !important;
+    border: 1px solid #66FCF1 !important;
+    font-weight: bold !important;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    text-align: justify !important;
+    font-size: 15px;
+}
+
+.project-button:hover{
+    background-color: #66FCF1 !important;
+    color: #1F2833 !important;
+    font-weight: bold;
+}
