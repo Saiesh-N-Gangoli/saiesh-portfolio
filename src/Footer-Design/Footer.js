@@ -9,10 +9,10 @@ const Footer = () => {
         &copy; 2024 Saiesh N Gangoli
       </div>
       <div className="right-side-of-footer">
-      <p><BsGithub/></p>
-      <p><BsInstagram/></p>
-      <p><BsLinkedin/></p>
-      <p><BsWhatsapp/></p>
+      <p className='margin-l'><BsGithub/></p>
+      <p className='margin-content'><BsInstagram/></p>
+      <p className='margin-content'><BsLinkedin/></p>
+      <p className='margin-content'><BsWhatsapp/></p>
       </div>
     </footer>
   )

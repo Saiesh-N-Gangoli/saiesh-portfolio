@@ -9,6 +9,8 @@
 .navigation-bar{
     background-color: #1F2833 !important;
     color: #66FCF1 !important;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .color-navigation-font{
