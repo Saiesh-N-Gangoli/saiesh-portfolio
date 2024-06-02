@@ -10,16 +10,25 @@
     justify-content: space-between;
     background-color: #1F2833;
     color: #66FCF1 !important;
-    padding: 8px 10px;
-    height: 55px;
+    padding: 0px 10px;
+    height: 57px;
+    margin-bottom: 0 !important;
+    bottom: 0;
 }
 
 .right-side-of-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 122%;
     width: 10%;
+}
+
+.right-side-of-footer p{
+    position: relative;
+    top: 2px;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: 2px;
 }
 
 .left-side-of-footer{
@@ -34,15 +43,9 @@
     }
 
     .right-side-of-footer{
-        width: 15%;
+        width: 30%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
     }
-}
-
-.margin-content{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.margin-l{
-    margin-right: 10px;
 }
