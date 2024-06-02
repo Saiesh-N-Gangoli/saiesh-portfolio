@@ -2,32 +2,25 @@ import React from "react";
 import ProjectCardTemplate from "./ProjectCardTemplate";
 import "./Project.css";
 import Footer from "../Footer-Design/Footer";
+import { Content1, Content2, Content3, Content4, Content5, Content6, URL1, URL2, URL3, URL4, URL5, URL6 } from "./ProjectConstants";
 
 const Project = () => {
   return (
     <React.Fragment>
     <div className="project-container mt-4">
-      <ProjectCardTemplate
-        title={"Repair Cafe"}
-        content={
-          "A PHP and HTML-based website for booking home electric product repairs. Implemented an admin panel for assigning workers to repair tasks, ensuring efficient service delivery. Enhanced user experience through seamless online booking and prompt service assignment."
-        }
-      />
+      <ProjectCardTemplate title={"Repair Cafe"}content={Content1} url={URL1}/>
 
-      <ProjectCardTemplate title={"Snapdeal Full Stack - Clone"} 
-      content={"Snapdeal clone using React for the frontend and Spring Boot with MS SQL for the backend. Implemented e-commerce features platform with features such as product listings shopping cart, and secure payment integration. Ensured robust performance and scalability."} />
+      <ProjectCardTemplate title={"Snapdeal Full Stack - Clone"} content={Content2} url={URL2} />
 
-      <ProjectCardTemplate title={"Tour India"} 
-      content={"A responsive front-end project, built solely with HTML, CSS, and JavaScript, delivers a visually engaging and user-friendly web experience. Free from reliance on frameworks and libraries, it seamlessly adapts to various screen sizes, ensuring a consistent and interactive interface."} />
+      <ProjectCardTemplate title={"Tour India"} content={Content3} url={URL3}/>
 
-      <ProjectCardTemplate title={"Amazon S3 with Springboot"} 
-      content={"A React image uploading application integrates React for the frontend and Spring Boot for the backend. Amazon S3 is used for storage, where users can upload, view and delete images. Through a interface users upload images can then browse uploaded images in a gallery-style view and can delete any images."} />
-      
-      <ProjectCardTemplate title={"title1"} content={"loremddewdwf"} />
-      <ProjectCardTemplate title={"title1"} content={"loremddewdwf"} />
-      <ProjectCardTemplate title={"title1"} content={"loremddewdwf"} />
-      <ProjectCardTemplate title={"title1"} content={"loremddewdwf"} />
-      <ProjectCardTemplate title={"title1"} content={"loremddewdwf"} />
+      <ProjectCardTemplate title={"Amazon S3 with Springboot"} content={Content4}  url={URL4}/>
+
+      <ProjectCardTemplate title={"Detection & Localization of Lung Nodules using Graph Data Sci."} 
+      content={Content5} url={URL5}/>
+      <ProjectCardTemplate title={"Wine Prediction Using ML"} 
+      content={Content6} 
+      url={URL6}/>
     </div>
     <Footer/>
     </React.Fragment>

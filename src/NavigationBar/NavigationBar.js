@@ -17,7 +17,7 @@ const NavigationBar = () => {
         <Nav.Link className='color-navigation-font' onClick={() => navigate('/about')}
         active={location.pathname === '/about'}>About</Nav.Link>
         <Nav.Link className='color-navigation-font' onClick={() => navigate('/skills')}
-        active={location.pathname === '/skills'}>Skills</Nav.Link>
+        active={location.pathname === '/skills'}>Skills</Nav.Link> 
         <Nav.Link className='color-navigation-font' onClick={() => navigate('/projects')}
         active={location.pathname === '/projects'}>Projects</Nav.Link>
         <Nav.Link className='color-navigation-font' onClick={() => navigate('/contact')} 
