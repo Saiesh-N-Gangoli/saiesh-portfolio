@@ -1,6 +1,7 @@
 import React from 'react'
 import {BsGithub, BsInstagram, BsLinkedin, BsWhatsapp} from "react-icons/bs";
 import './Footer.css'
+import { githubURL, instagramURL, linkedinURL, whatsappURL } from '../Contact/Constants';
 
 const Footer = () => {
 
@@ -15,15 +16,15 @@ const Footer = () => {
       </div>
       <div className="right-side-of-footer">
       <p
-      onClick={()=>{handleClick('https://github.com/Saiesh-N-Gangoli')}}><BsGithub/></p>
+      onClick={()=>{handleClick(githubURL)}}><BsGithub/></p>
       <p
-      onClick={()=>{handleClick('https://www.instagram.com/saiesxx.777')}}
+      onClick={()=>{handleClick(instagramURL)}}
       ><BsInstagram/></p> 
       <p 
-      onClick={()=>{handleClick('https://www.linkedin.com/in/saiesh-n-gangoli-8858a5199')}}
+      onClick={()=>{handleClick(linkedinURL)}}
       ><BsLinkedin/></p>
       <p 
-      onClick={()=>{handleClick('https://wa.me/+918197215817')}}
+      onClick={()=>{handleClick(whatsappURL)}}
       ><BsWhatsapp/></p>
       </div>
     </footer>

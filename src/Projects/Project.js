@@ -21,6 +21,8 @@ const Project = () => {
       <ProjectCardTemplate title={"Wine Prediction Using ML"} 
       content={Content6} 
       url={URL6}/>
+
+      
     </div>
     <Footer/>
     </React.Fragment>

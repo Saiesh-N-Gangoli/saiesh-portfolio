@@ -1,17 +1,87 @@
 .main-home-container{
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .left-home-container{
-    background-color: aqua;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 30%;
+    width: 40%;
+    /* background-color: #25D366; */
+}
+
+.left-home-container img{
+    width: 430px;
+    height: 330px;
+    position: relative;
+    bottom: 80px;
 }
 
 .right-home-container{
-    background-color: aquamarine;
-    width: 30%;
+    width: 50%;
+    font-size: 29px;
 }
+
+.right-home-container p{
+    font-family: "Play", sans-serif;
+    color: #fff;
+}
+
+.name-home-page{
+    color: #66FCF1 !important;
+    font-weight: bold;
+}
+
+.span-moving-tag{
+    color: #66FCF1;
+    position: relative;
+    left: 8px;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    position: relative;
+}
+
+.icon-color{
+    color: #66FCF1;
+}
+
+.social-media-icons p:hover{
+    cursor: pointer;
+}
+
+.icon-color-whatsapp:hover{
+    color: #25D366;
+}
+
+.icon-color-linkedin:hover{
+    color: #0077B5;
+}
+
+.icon-color-instagram:hover{
+    color: #E1306C;
+}
+
+.icon-color-github:hover{
+    color: #2b3137;
+}
+
+@media screen and (max-width: 577px){
+    .main-home-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-home-container{
+        width: 100%;
+    }
+}
+
+
+
+
+
