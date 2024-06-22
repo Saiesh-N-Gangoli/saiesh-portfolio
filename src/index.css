@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+*{
+  font-family: "Play", sans-serif;
+}
+
+.aqua-color{
+  color: #66FCF1;
+}
+
 body {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
