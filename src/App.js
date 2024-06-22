@@ -9,6 +9,7 @@ import Contact from './Contact/Contact';
 import NotFound from './NotFound/NotFound';
 import NavigationBar from './NavigationBar/NavigationBar';
 import Spinner from './Spinner/Spinner';
+import SkillsTemplate from './Skills/SkillsTemplate';
 
 function App() {
   const[loading, setLoading] = useState(false);
@@ -32,6 +33,7 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/skills' element={<Skills/>}/>
+        <Route path='/skillst' element={<SkillsTemplate/>}/>
         <Route path='/projects' element={<Project/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='*' element={<NotFound/>}/>
