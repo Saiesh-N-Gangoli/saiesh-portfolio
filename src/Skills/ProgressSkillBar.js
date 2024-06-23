@@ -1,5 +1,6 @@
 import {React,  useEffect, useState } from 'react'
 import { ProgressBar } from "react-bootstrap";
+import { CProSVG, JavSVG, SQLSVG, SpringBootSVG, awsSvg, cssSvg, htmlsvg, javaSVG, reactSVG } from './SkillsSVG';
 
 const ProgressSkillBar = () => {
     const [progressValue, setProgressValue] = useState({
@@ -21,31 +22,31 @@ const ProgressSkillBar = () => {
   return (
     <>
       <div className="single-skills">
-              <p>HTML, CSS and JS</p>
+              <p> {htmlsvg}{cssSvg}{javaSVG}  <span className='pos-html'>HTML, CSS and JS</span></p>
             <ProgressBar animated now={progressValue.HTML}/>
             </div>
             <div className="single-skills">
-              <p>React JS & Redux</p>
+              <p>{reactSVG} React JS & Redux</p>
             <ProgressBar animated now={progressValue.React}/>
             </div>
             <div className="single-skills">
-              <p>Java</p>
+              <p>{JavSVG}  Java</p>
             <ProgressBar animated now={progressValue.Java}/>
             </div>
             <div className="single-skills">
-              <p>C Programming</p>
+              <p>{CProSVG} C Programming</p>
             <ProgressBar animated now={progressValue.CProgramming}/>
             </div>
             <div className="single-skills">
-              <p>Springboot</p>
+              <p>{SpringBootSVG} Springboot</p>
             <ProgressBar animated now={progressValue.Springboot}/>
             </div>
             <div className="single-skills">
-              <p>SQL</p>
+              <p>{SQLSVG} SQL</p>
             <ProgressBar animated now={progressValue.SQL}/>
             </div>
             <div className="single-skills">
-              <p>AWS</p>
+              <p>{awsSvg} AWS</p>
             <ProgressBar animated now={progressValue.AWS}/>
             </div>
     </>

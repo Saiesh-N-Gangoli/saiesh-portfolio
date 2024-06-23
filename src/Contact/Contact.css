@@ -170,3 +170,24 @@ button:hover .transition {
 button:active {
   transform: scale(0.97);
 }
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-hover h2::before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #66FCF1;
+  transition: all 0.5s;
+
+}
+
+.underline-hover h2:hover:before{
+  width: 65%;
+}

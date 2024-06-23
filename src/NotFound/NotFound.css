@@ -1,0 +1,47 @@
+.notfound-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container p{
+    font-size: 200px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.not-found-text{
+    background-color: #66FCF1;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 40px;
+    font-weight: bolder;
+}
+
+@keyframes slideFromTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.animated-404 {
+    animation: slideFromTop 1s ease-out;
+  }
+
+.go-back{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.go-back:hover{
+   cursor: pointer;
+   transition: 0.5s;
+}

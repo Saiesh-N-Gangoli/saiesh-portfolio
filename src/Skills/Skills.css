@@ -13,26 +13,48 @@
 .second-techincal-skills-main-container{
     /* width: 30%; */
     display: flex;
-    
     align-items: center;
     margin: 15px 15px;
+    border-left: 1px solid #FFF;
+    height: 415px;
 }
 
 .first-techincal-skills-main-container{
-    width: 30%;
+    width: 32%;
     display: flex;
     align-items: center;
     margin: 15px 15px;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .first-techincal-skills-main-container p{
     text-align: justify;
-    color: #FFF;
+    color: #C5C6C7;
+}
+
+.margin-svg{
+    margin-right: 10px;
+}
+
+.pos-js{
+    position: relative;
+    top: 5px;
+}
+
+.pos-css{
+    position: relative;
+    top: 0.5px;
+}
+
+.pos-html{
+    position: relative;
+    top: 2.5px;
 }
 
 
 .third-techincal-skills-main-container{
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,11 +76,11 @@
 }
 
 .single-skills{
-    margin: 3px 3px;
+    margin: 2px 2px;
 }
 
 .single-skills p{
-    color: #FFF;
+    color: #C5C6C7;
     margin: 6px 6px;
     font-size: small;
 }
@@ -66,4 +88,26 @@
 .progress-bar{
     background-color: #66FCF1 !important;
 }
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-hover h4::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #66FCF1;
+    transition: all 0.5s;
+
+}
+
+.underline-hover h4:hover:before{
+    width: 100%;
+}
+
 
