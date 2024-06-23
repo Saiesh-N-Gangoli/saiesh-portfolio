@@ -42,8 +42,9 @@
 .social-media-icons{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 30%;
     position: relative;
+    font-size: 20px;
 }
 
 .icon-color{
@@ -95,6 +96,8 @@
         align-items: center;
     }
 }
+
+
 
 
 

@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router';
+import { Route, Routes, useLocation } from 'react-router';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import HomePage from './HomePage/HomePage';
@@ -12,6 +12,7 @@ import Spinner from './Spinner/Spinner';
 import SkillsTemplate from './Skills/SkillsTemplate';
 
 function App() {
+  const location = useLocation()
   const[loading, setLoading] = useState(false);
 
   useEffect(()=>{
@@ -26,9 +27,11 @@ function App() {
     return <Spinner/>
   }
 
+  const knownRoutes = ['/', '/about', '/skills', '/skillst', '/projects', '/contact'];
+
   return (
     <React.Fragment>
-      <NavigationBar/>
+      {knownRoutes.includes(location.pathname) && <NavigationBar />}
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<About/>}/>

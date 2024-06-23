@@ -9,13 +9,15 @@ const Contact = () => {
     <div>
       <div className="main-contact-container d-flex mt-5 play-regular">
         <div className="left-contact-container">
+           <div className="underline-hover">
             <h2 className="fw-bold">Let's Talk</h2>
-            <p className="fw-light">Looking forword to hear from you</p>
-            <p><span className="fw-bold"><MdLocalPhone/> </span>
+            </div>
+            <p className="fw-light mt-2">Looking forword to hear from you</p>
+            <p><span className="fw-bold"><MdLocalPhone className="aqua-color"/> </span>
             <span className="fw-light">+91 8197215817</span></p>
-            <p><span className="fw-bold"><MdEmail/> </span>
+            <p><span className="fw-bold"><MdEmail className="aqua-color"/> </span>
             <span className="fw-light">saieshd3@gmail.com</span></p>
-            <p><span className="fw-bold"><MdLocationPin/> </span>
+            <p><span className="fw-bold"><MdLocationPin className="aqua-color"/> </span>
             <span className="fw-light">Bangalore</span></p>
         </div>
         <div className="right-contact-container">
